@@ -2,13 +2,13 @@
 #include <vector>
 #include <list>
 using namespace std;
-// Parámetros Tipo
+// 1. PARÁMETROS TIPO
 template <class Type>
 Type sumar(Type a, Type b) {
     return a + b;
 }
 
-// Parámetros no Tipo
+// 2. PARÁMETROS NO TIPO
 int restar(int a, int b) {      // Parámetros de una función
     return a - b;               // Se obtienen en tipo de ejecución
 }
@@ -51,7 +51,7 @@ int multiplicar(int&& a, int&& b) { // Referencia R-Value
     return a * b;
 }
 
-// Parámetros Template
+// 3. PARÁMETROS TEMPLATE
 //template<typename T, template <class...> class ContainerType>
 /*
  1. Solo se deducen si los tipos se encuentra en la lista de parámetros
